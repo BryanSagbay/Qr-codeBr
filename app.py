@@ -11,5 +11,5 @@ qr = qrcode.QRCode(
 qr.add_data(url)
 qr.make(fit=True)
  
-imagenqr = qr.make_image(fill='black', back_color='white') 
+imagenqr = qr.make_image() 
 imagenqr.save('qrcode.png')
